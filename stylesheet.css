@@ -576,7 +576,6 @@ body {
 }
 
 
-/*after music*/
 .bulb-glow-yellow-after {
 	background-image: url('bulb_yellow.png');
 	-webkit-animation: bulb_glow_yellow_after linear 1s infinite;
@@ -996,7 +995,7 @@ audio {
 	33%{
 		-webkit-transform:translate(0px,0px);
 		-webkit-transform:rotate(10deg);
-		/*-webkit-transform:scale(1.5);*/
+
 	}
 	66% {
 		-webkit-transform:translate(0px,100px);
@@ -1056,7 +1055,8 @@ audio {
 	100% {
 		-ms-transform:translate(0px,0px);
 	}
-}o
+}
+
 @keyframes bannar_come {
 	0%{
 		transform:translate(0px,-1000px);
@@ -1114,6 +1114,13 @@ audio {
 #b7,#b77{
 	background-image: url('b7.png');
 }
+.balloons#b1 h2, .balloons#b11 h2 { color: #F2B300; }
+.balloons#b2 h2, .balloons#b22 h2 { color: #0719D4; }
+.balloons#b3 h2, .balloons#b33 h2 { color: #D14D39; }
+.balloons#b4 h2, .balloons#b44 h2 { color: #8FAD00; }
+.balloons#b5 h2, .balloons#b55 h2 { color: #8377E4; }
+.balloons#b6 h2, .balloons#b66 h2 { color: #99C96A; }
+.balloons#b7 h2, .balloons#b77 h2 { color: #20CFB4; }
 .balloons-rotate-behaviour-one {
 	-webkit-animation: balloons_rotate_one linear 10s infinite;
 	-webkit-transform: rotate(30deg);
@@ -1300,11 +1307,26 @@ audio {
         background-color: #466baf;
     }
 
-
-
-    /*controlling tablet width*/
-    /*@media only screen and (max-width: 720px){
-    	.container {
-    		-webkit-transform: scale(0.9);
-    	}
-    }*/
+.story-photos{
+	display:flex;
+	justify-content:center;
+	gap:30px;
+	margin-bottom:20px;
+}
+.story-photos .photo{
+	text-align:center;
+}
+.story-photos img{
+	width:220px;
+	height:140px;
+	object-fit:cover;
+	border-radius:6px;
+	border:3px solid #fff;
+	box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+.story-photos .photo-controls{
+	margin-top:8px;
+}
+.story-photos input[type=file]{
+	display:none;
+}
